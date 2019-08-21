@@ -1,0 +1,86 @@
+/* MAIN BOARD */
+body{
+    margin: 0;
+    padding: 0;
+    background: #aba7a6;
+    font-family: sans-serif;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.menu{
+    width:150px;
+    height: 200px;
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.32);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.32);
+}
+button{
+    background: #525050;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+}
+button#reset{
+    display: none;
+    margin: auto;
+}
+button:hover{
+    background: white;
+    color: #525050;
+}
+#message{
+    width: 100px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 30px;
+    border: 2px solid black;
+    display: none;
+}
+#circuit{
+    margin: auto;
+    text-align: center;
+}
+.box{
+    font-size: 3rem;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #aba7a6;
+    transition: background 200ms ease-in-out;
+}
+.box:hover{
+    background: lightgray;
+}
+/* JS CLASSES */
+.noClick{
+    pointer-events: none;
+}
+.checkedPlayer{
+    pointer-events: none;
+    background: lightgray;
+}
+.checkedCom{
+    pointer-events: none;
+    background: gray;
+}
+
+/* ANIMATIONS */
+.animate{
+    animation: blink 200ms 2 alternate both;
+}
+
+@keyframes blink{
+    from{
+        background: white;
+    }
+    to{
+        background: #aba7a6;
+    }
+}
