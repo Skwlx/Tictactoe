@@ -1,2 +1,2 @@
 # Tictactoe
-Tictactoe game made in clear javascript.
+Tictactoe game made in vanilla javascript.
